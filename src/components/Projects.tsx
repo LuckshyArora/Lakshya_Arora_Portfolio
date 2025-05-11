@@ -2,10 +2,40 @@
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Database, BarChart, LineChart } from 'lucide-react';
+import { Database, BarChart, Brain, ChartBar, BookOpen } from 'lucide-react';
 
 const Projects = () => {
   const projects = [
+    {
+      title: "Used Car Price Prediction in India",
+      description: "ML model to predict used car prices with high accuracy using multiple algorithms.",
+      icon: <ChartBar size={32} className="text-portfolio-blue" />,
+      achievements: [
+        "Conducted a comprehensive analysis of 15,000+ listings to model used car prices using Random Forest, Gradient Boosting, and deep learning.",
+        "Identified price drivers like fuel type, transmission, and vehicle age; achieved high predictive accuracy with RMSE and MAPE metrics."
+      ],
+      technologies: ["Python", "Random Forest", "Gradient Boosting", "Deep Learning", "Predictive Modeling", "Data Analysis"]
+    },
+    {
+      title: "EV Market Segmentation & Strategy",
+      description: "ML-driven customer segmentation for India's EV market with actionable insights.",
+      icon: <BarChart size={32} className="text-portfolio-blue" />,
+      achievements: [
+        "Performed machine learning-driven customer segmentation using K-Means and hierarchical clustering on India's EV market.",
+        "Formulated a data-backed market entry strategy targeting urban early adopters, fleet operators, and cost-conscious consumers."
+      ],
+      technologies: ["K-Means Clustering", "Hierarchical Clustering", "Market Analysis", "Strategic Planning", "Python"]
+    },
+    {
+      title: "Learnify – AI-Powered Learning Platform",
+      description: "AI-driven edtech platform that personalizes learning experiences.",
+      icon: <Brain size={32} className="text-portfolio-blue" />,
+      achievements: [
+        "Designed an AI-driven edtech platform that personalizes learning using NLP, reinforcement learning, and real-time analytics.",
+        "Built key modules for adaptive learning paths, gamification, and student performance dashboards, ensuring GDPR/FERPA compliance."
+      ],
+      technologies: ["NLP", "Reinforcement Learning", "Real-time Analytics", "EdTech", "Data Privacy", "UI/UX"]
+    },
     {
       title: "Inventory Management Database",
       description: "A MySQL-based inventory system to track materials, suppliers, and product stock.",
@@ -20,7 +50,7 @@ const Projects = () => {
     {
       title: "Student Performance Prediction Model",
       description: "ML models to predict academic performance with up to 85% accuracy.",
-      icon: <BarChart size={32} className="text-portfolio-blue" />,
+      icon: <BookOpen size={32} className="text-portfolio-blue" />,
       achievements: [
         "Collected and cleaned student data from the in-house learning app, including attendance, quiz scores, and practice trends.",
         "Built and evaluated ML models (Logistic Regression, Random Forest, SVM) to predict academic performance with up to 85% accuracy.",
@@ -31,7 +61,7 @@ const Projects = () => {
     {
       title: "E-Commerce Website",
       description: "A responsive pharmacy e-commerce frontend using React.",
-      icon: <LineChart size={32} className="text-portfolio-blue" />,
+      icon: <BarChart size={32} className="text-portfolio-blue" />,
       achievements: [
         "Built a responsive pharmacy e-commerce frontend using React, featuring dynamic cart management and smooth navigation.",
         "Designed and implemented product listing, filtering, and sorting functionalities to enhance the user experience.",
